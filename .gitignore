@@ -15,3 +15,5 @@
 # Maven
 log/
 target/
+/input-sources/.gradle/
+/input-sources/build/
