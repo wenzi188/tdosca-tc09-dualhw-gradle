@@ -23,11 +23,12 @@ dependencies {
     implementation("jakarta.persistence:jakarta.persistence-api:2.2.3")
     implementation("com.github.peteroupc:numbers:1.8.0")
 
+    testImplementation("junit:junit:4.13")
     smokeTest("org.apache.httpcomponents:httpclient:4.5.5")
-
-    runtimeOnly(group = "org.hibernate", name = "hibernate", version = "3.0.5") {
+    runtimeOnly("org.hibernate:hibernate:3.0.5") {
         isTransitive = true
     }
+
 }
 
 group = "de.tdosca"
