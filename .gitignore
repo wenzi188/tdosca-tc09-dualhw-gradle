@@ -17,3 +17,5 @@ log/
 target/
 /input-sources/.gradle/
 /input-sources/build/
+/old.idea/
+
