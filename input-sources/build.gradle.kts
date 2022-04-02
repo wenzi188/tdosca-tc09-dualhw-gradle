@@ -12,6 +12,8 @@ repositories {
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
+    mavenCentral()
+    jcenter()
 }
 
 val smokeTest by configurations.creating {
@@ -23,9 +25,9 @@ dependencies {
     implementation("jakarta.persistence:jakarta.persistence-api:2.2.3")
     implementation("com.github.peteroupc:numbers:1.8.0")
 
-    testImplementation("junit:junit:4.13")
-    smokeTest("org.apache.httpcomponents:httpclient:4.5.5")
-    runtimeOnly("org.hibernate:hibernate:3.0.5") {
+    testImplementation("junit:junit:4.13.2")
+    smokeTest("org.apache.httpcomponents:httpclient:4.5.13")
+    runtimeOnly("org.hibernate:hibernate:3.5.4-Final") {
         isTransitive = true
     }
 
