@@ -27,7 +27,7 @@ dependencies {
 
     testImplementation("junit:junit:4.13.2")
     smokeTest("org.apache.httpcomponents:httpclient:4.5.13")
-    runtimeOnly("org.hibernate:hibernate:5.6.7.Final") {
+    runtimeOnly("org.hibernate:hibernate-core:5.2.17.Final") {
         isTransitive = true
     }
 
